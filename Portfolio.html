@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhargavi </title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Verdana', sans-serif;
+      background-color: #0d0d0d;
+      color: #00FF00;
+    }
+
+    header {
+      background-color: #;
+      padding: 3rem;
+      position: relative;
+      border-bottom: 2px solid #00FF00;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-links {
+  margin-top: 3rem; /* Adjust this value to your liking */
+}
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #00FF00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+nav a {
+  color: #00FF00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  transform: scale(1.2);
+  color: #ff00cc;
+}
+
+    .top-links {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .top-links a {
+      color: #00FF00;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+
+    .top-links a:hover {
+      color: #00FF00;
+    }
+
+    section {
+      padding: 3rem;
+      border-bottom: 1px solid #222;
+    }
+
+.badge {
+  display: inline-block;
+  background-color: #00FF00;
+  color: #0d0d0d;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #ff00cc;
+  margin-bottom: 1rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px #00FF00; }
+  50% { box-shadow: 0 0 20px #00FF00; }
+  100% { box-shadow: 0 0 10px #00FF00; }
+}
+
+    .card {
+      background-color: #;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border: 1px solid #00FF00;
+      border-radius: 8px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 15px #00FF00;
+      border-color: #00FF00;
+    }
+
+a {
+  color: #00FF00;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff00cc;
+  text-decoration: underline;
+}
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "• ";
+      color: #ff00cc;
+    }
+
+.top-links a {
+  color: #00FF00;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.top-links a:hover {
+  color: #ff00cc;
+  transform: scale(1.2);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 200vh; /* double the height */
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 255, 0, 0.05) 0px,
+    rgba(0, 255, 0, 0.05) 1px,
+    transparent 1px,
+    transparent 2px
+  ),
+  repeating-linear-gradient(
+    90deg,
+    rgba(0, 255, 0, 0.05) 0px,
+    rgba(0, 255, 0, 0.05) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  animation: scrollGrid 20s linear infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+
+@keyframes scrollGrid {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50vh); }
+}
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #;
+      border-top: 2px solid #00FF00;
+    }
+.icon-cloud {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.icon-cloud i {
+  position: absolute;
+  color: rgba(0, 255, 0, 0.08);
+  font-size: 2rem;
+  animation: flicker 3s infinite ease-in-out;
+}
+
+@keyframes flicker {
+  0%   { opacity: 0.1; transform: scale(1); }
+  25%  { opacity: 0.3; transform: scale(1.1); }
+  50%  { opacity: 0.05; transform: scale(0.9); }
+  75%  { opacity: 0.2; transform: scale(1.05); }
+  100% { opacity: 0.1; transform: scale(1); }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.footer-links a {
+  color: #00FF00;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff00cc;
+  transform: scale(1.2);
+}
+
+.language-badges {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.language-badges i {
+  color: #00FF00;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  animation: flicker 2.5s infinite ease-in-out;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.2); }
+}
+
+.section-heading {
+  width: 100%;
+  
+  font-size: 2rem;
+  color: #00FF00;
+  margin-bottom: 2rem;
+  animation: none;
+}
+
+.edu-card {
+  background-color: #;
+  border: 1px solid #00FF00;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #;
+  color: #00FF00;
+  
+  margin: 0 auto;
+}
+
+.projects-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.project-card {
+  background-color: #;
+  border: 1px solid #00FF00;
+  padding: 1.5rem;
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #;
+  color: #00FF00;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00FF00;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+  <div class="logo">
+<h1>Bhargavi Vootapalli.</h1>
+  <p  style="text-align:center;">A Mix of Computer Science with Cyber Security.</p>
+
+
+</div>
+ 
+  <nav class="nav-links">
+
+   <!--  <p style="text-align:center;">A Mix of Computer Science with Cyber Security.</p> -->
+    
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#trust">Why Me?</a>
+  <a href="#timeline">Journey</a>
+  <a href="#contact">Contact</a>
+</nav>
+    <div class="top-links">
+  <a href="mailto:voobhargavi5@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+  <a href="https://github.com/bhargavi0004" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/bhargavi-vootapalli-ba5205303/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+</div>
+  </header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm Bhargavi, a Computer Science student specializing in <strong>Cybersecurity</strong>. My journey into the world of security started with curiosity and quickly turned into a passion — especially for <strong>malware analysis</strong> and <strong>cryptography</strong>.
+  </p>
+  <p>
+    I've worked on several hands-on projects using <strong>Arduino</strong>, which helped me understand how hardware and software interact at a low level. These experiences taught me how to think logically, debug creatively, and build with intention.
+  </p>
+  <p>
+    I can speak <strong>four languages</strong>, which helps me connect across cultures and understand global threat landscapes with more nuance.
+  </p>
+
+  <p>
+    As a beginner in cybersecurity, I’ve already developed a strong foundation in analyzing PE files, exploring obfuscation techniques, and understanding threat behavior. I’m familiar with tools like <strong>IDA Pro</strong>, <strong>CFF Explorer</strong>, <strong>PEview</strong>, <strong>PEviewer</strong>, and <strong>Resource Hacker</strong>.
+  </p>
+<!--<div class="tool-badges">
+  <span class="badge">IDA Pro</span>
+  <span class="badge">Arduino</span>
+  <span class="badge">After Effects</span>
+</div> -->
+
+  <p class="highlight">
+    I’m still learning — and I love that. This site is my way of documenting that journey honestly, showcasing what I know, and staying open to everything I’ve yet to discover.
+  </p>
+</section>
+
+ 
+
+<section class="education">
+  <h2>Education</h2>
+  <div class="edu-card">
+    <h3>B.Tech in Computer Science</h3>
+    <p>Specialization: Cybersecurity</p>
+    <p>Vellore Institute of technology, Amaravati</p>
+    <p>2023–2027</p>
+    <p>CGPA: 8.61  / 10</p>
+  </div>
+</section>
+
+
+<section class="projects-row">
+  <h2 class="section-heading">Projects</h2>
+
+  <div class="project-card">
+    <h3>Women's Safety Device</h3>
+    <p>Engineered a smart safety device with GPS & alert system for women's protection.</p>
+    <p>Programmed Arduino to trigger emergency alerts in real time.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Anti-Theft Vehicle Tracker</h3>
+    <p>Developed an IoT-enabled system to track vehicles in real time using GPS.</p>
+    <p>Implemented theft-detection mechanism with instant SMS alerts via GSM module.</p>
+  </div>
+</section>
+
+
+<!-- 
+ <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Women’s Safety Device: Arduino-based</h3>
+      <p>• Engineered a smart safety device with GPS & alert system for women’s protection. </p>
+ <p>• Programmed Arduino to trigger emergency alerts in real time.</p>
+    </div>
+    <div class="card">
+      <h3>Anti-Theft and Vehicle Tracking System: Arduino & GPS-based</h3>
+      <p>• Developed an IoT-enabled system to track vehicles in real time using GPS.</p>
+ <p>• Implemented theft-detection mechanism that sends instant alerts to the owner. </p>
+
+ <p>• Enhanced safety by integrating GSM module for SMS notifications. <p>
+
+    </div>
+  </section>
+-->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <p><strong>Programming Languages:</strong> Java, Python, C, C++ </p>
+      <p><strong>Cyber Security: </strong>Cryptography, Malware analysis (static, dynamic, behavioral)</p>
+      <p><strong>Web Technologies and Frameworks:</strong> HTML, CSS</p>
+      <p><strong>Platforms and Tools:</strong> Git, Kali Linux, VirtualBox, After Effects</p>
+      <p><strong>Core Skills:</strong> Problem Solving, Vulnerability Analysis, Secure Coding</p>
+
+    </ul>
+	</section>
+
+<section id="trust">
+  <h2>Why Trust Me?</h2>
+  <!--<div class="badge">Beginner, but Dangerous</div>-->
+  <div class="card">
+<div class="badge">Beginner, but Dangerous</div>
+
+    <p>
+      I'm a cybersecurity beginner with a strong foundation in <span class="highlight">malware analysis</span> and <span class="highlight">cryptography</span>. I may not build tools (yet), but I dive deep into how they work — dissecting binaries, exploring obfuscation techniques, and understanding threat behavior.
+    </p>
+    <p>
+      I'm familiar with industry-standard tools like <strong>IDA Pro</strong>, <strong>CFF Explorer</strong>, <strong>PEview</strong>, <strong>PEviewer</strong>, and <strong>Resource Hacker</strong>. I use them to analyze executables, inspect headers, and uncover hidden payloads.
+    </p>
+    <p>
+      What I bring is curiosity, discipline, and a hunger to learn. I ask the right questions, document my findings, and constantly seek ways to improve. If you're looking for someone who’s serious about growing in cybersecurity and already fluent in the language of malware — I’m your person.
+    </p>
+    <p class="highlight">
+      Trust me not because I know everything — but because I’m committed to learning everything that matters.
+    </p>
+  </div>
+</section>
+
+<section id="timeline">
+  <h2>My Cybersecurity Journey</h2>
+  <div class="card">
+    <ul>
+      <p><strong>2023 (Early)</strong> — Discovered my passion for cybersecurity and started exploring malware analysis.</p>
+
+      <p><strong>2025 (Mid)</strong> — Learned how to use tools like <em>IDA Pro</em>, <em>CFF Explorer</em>, <em>PEview</em>, and <em>Resource Hacker</em>.</p>
+
+      <p><strong>2025 (Late)</strong> — Gained confidence in analyzing PE files, inspecting headers, and understanding cryptographic techniques.</p>
+
+      <p><strong>Next Up</strong> — Building my first malware analysis workflow, diving deeper into reverse engineering and automation.</p>
+    </ul>
+    <p class="highlight">Every byte I analyze brings me closer to mastery.</p>
+  </div>
+</section>
+
+  <!-- <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:voobhargavi5@gmail.com">voobhargavi5@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/bhargaviv0004" target="_blank">github.com/bhargaviv0004</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/bhargavi" target="_blank">linkedin.com/in/bhargavi</a></p>
+  </section> -->
+
+  <footer id="contact">
+  <h2>Contact Me</h2>
+  <div class="footer-links">
+    <a href="mailto:voobhargavi5@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/bhargavi0004" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/bhargavi-vootapalli-ba5205303/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <p>&copy; 2025 Bhargavi Vootapalli. Runs on curiosity, chaos, and Ctrl+Z .</p>
+</footer>
+
+  <!-- </div> -->
+</body>
+</html>
